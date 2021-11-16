@@ -1,0 +1,39 @@
+
+@t2-color-alt-bg: #fbfbfb;
+@t2-color-bg: #f1f1f1;
+
+.box-shadow {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.08), 0 2px 3px 0 rgba(0, 0, 0, 0.24);
+}
+
+html, body, #root, .dev-app {
+  font-family: Tele2Sans-Regular,sans-serif;
+  height: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.dev-app {
+  display: flex;
+  flex-flow: column;
+  background-color: white;
+
+  &__props {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    min-height: 72px;
+    background-color: white;
+    .box-shadow();
+    z-index: 1;
+  }
+
+  &__container {
+    background-color: grey;
+    flex: 1 0 auto;
+    .box-shadow();
+    position: relative;
+  }
+}

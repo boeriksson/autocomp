@@ -1,0 +1,16 @@
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### VS Code ###
+.vscode/
+
+### JS ###
+node_modules
+yarn.lock
+**/dist
+**/node
+*.log
+*.lockfile
